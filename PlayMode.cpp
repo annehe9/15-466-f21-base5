@@ -338,7 +338,7 @@ void PlayMode::update(float elapsed) {
 
 		//animation
 		//slowly rotates through [0,1):
-		wobble += elapsed / 10.0f;
+		wobble += elapsed / 20.0f;
 		//wobble -= std::floor(wobble);
 		float tail_angle = 20.f * std::sin(wobble * 10.0f * 2.0f * float(M_PI));
 		cattail->rotation = tail_base * glm::angleAxis(tail_angle * DEG2RAD, glm::vec3(0.f, 1.f, 0.f));
@@ -348,19 +348,19 @@ void PlayMode::update(float elapsed) {
 	score += space.downs;
 	total += space.downs;
 	if (score >= 10) {
-		float randx = (float)rand() / RAND_MAX;
-		float randy = (float)rand() / RAND_MAX;
+		float randx = (20.0f * (float)rand() / RAND_MAX) - 10;
+		float randy = (20.0f * (float)rand() / RAND_MAX) - 10;
 
 		glm::vec3 old_pos = cat->position;
 		cat->position = glm::vec3(cat->position.x + randx, cat->position.y + randy, cat->position.z);
 		WalkPoint cat_at = walkmesh->nearest_walk_point(cat->position);
 		cat->position = walkmesh->to_world_point(cat_at);
 		cat->position = glm::vec3(cat->position.x, cat->position.y, old_pos.z);
-		glm::vec3 delta = cat->position - old_pos;
+		/*glm::vec3 delta = cat->position - old_pos;
 		cat->position = old_pos;
 		for (Scene::Transform* c : catTransforms) {
-			cat->position += delta;
-		}
+			c->position += delta;
+		}*/
 		score = 0;
 	}
 
