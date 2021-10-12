@@ -33,7 +33,9 @@ Reused cat assets and code from Game 2 with permission from collaborator George 
 Perhaps this game takes place in the same universe.
 
 "Ancient Winds" by Kevin MacLeod, from freepd.com, under CC0.
+
 "Walking sound" (originally titled A Walk with Stop) by straget, from https://freesound.org/people/straget/sounds/414921/. CC0.
+
 "Pet" (originally titled Petting an Animal) by AryaNotStark, from https://freesound.org/people/AryaNotStark/sounds/407626/. CC0.
 
 Sounds modified in Audacity to make them work better as sound effects in game.
