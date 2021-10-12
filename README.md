@@ -25,17 +25,18 @@ but it should still be in a reachable range. There is currently some debug code 
 The randomized spawn distance is capped at not-too-far from where it was last.
 
 Sources: Used 15-466 Game 5 base code and code from in-class/in-Discord discussions, with slight modifications and comments. 
-Thanks Owen, Shane, and Ben for your Discord contributions!
-
+Thanks Owen, Shane, and Ben for your Discord contributions! Also referenced code from F20 on simplifying barycentric velocity with the helper function.
 
 Modified included city scene originally by Jim McCann.
 
-Reused cat asset from Game 2 with permission from collaborator George Ralph: https://github.com/gdr22/15-466-f21-base2. 
+Reused cat assets and code from Game 2 with permission from collaborator George Ralph: https://github.com/gdr22/15-466-f21-base2. 
 Perhaps this game takes place in the same universe.
 
 "Ancient Winds" by Kevin MacLeod, from freepd.com, under CC0.
-"Walking sound" (originally A Walk with Stop) by straget, from https://freesound.org/people/straget/sounds/414921/. CC0.
-"Pet" (originally Petting an Animal) by AryaNotStark, from https://freesound.org/people/AryaNotStark/sounds/407626/. CC0.
+"Walking sound" (originally titled A Walk with Stop) by straget, from https://freesound.org/people/straget/sounds/414921/. CC0.
+"Pet" (originally titled Petting an Animal) by AryaNotStark, from https://freesound.org/people/AryaNotStark/sounds/407626/. CC0.
+
+Sounds modified in Audacity to make them work better as sound effects in game.
 
 This game was built with [NEST](NEST.md).
 
