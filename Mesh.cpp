@@ -101,6 +101,11 @@ MeshBuffer::MeshBuffer(std::string const &filename) {
 const Mesh &MeshBuffer::lookup(std::string const &name) const {
 	auto f = meshes.find(name);
 	if (f == meshes.end()) {
+		if (name == "WalkMesh") {
+			for (auto const& pair : meshes) {
+				std::cout << "{" << pair.first << "\n";
+			}
+		}	
 		throw std::runtime_error("Looking up mesh '" + name + "' that doesn't exist.");
 	}
 	return f->second;

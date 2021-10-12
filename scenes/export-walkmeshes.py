@@ -116,8 +116,8 @@ for obj in bpy.data.objects:
 
 	print("Writing '" + name + "'...")
 
-	if bpy.context.object:
-		bpy.ops.object.mode_set(mode='OBJECT') #get out of edit mode (just in case)
+	#if bpy.context.object:
+	#	bpy.ops.object.mode_set(mode='OBJECT') #get out of edit mode (just in case)
 
 	#select the object and make it the active object:
 	bpy.ops.object.select_all(action='DESELECT')
